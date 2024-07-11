@@ -10,11 +10,12 @@ app.use(bodyParser.json());
 
 // Create connection to MySQL
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: '127.0.0.1',
     user: 'root',
     password: 'Pritam@1999',
     database: 'referralDB'
 });
+
 
 // Connect to MySQL
 db.connect((err) => {
@@ -24,6 +25,7 @@ db.connect((err) => {
     }
     console.log('MySQL Connected...');
 });
+
 
 // Handle referral form submission
 app.post('/api/referrals', (req, res) => {
