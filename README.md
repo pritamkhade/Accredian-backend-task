@@ -1,4 +1,4 @@
-#MYSQL
+
 show databases;
 CREATE DATABASE referralDB;
 USE referralDB;
