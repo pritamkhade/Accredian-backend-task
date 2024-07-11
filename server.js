@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // Create connection to MySQL
 const db = mysql.createConnection({
-    host: '127.0.0.1:3306',
+    host: '127.0.0.1',
     user: 'root',
     password: 'Pritam@1999',
     database: 'referralDB'
